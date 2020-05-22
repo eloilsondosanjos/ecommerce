@@ -2,12 +2,71 @@
 
 /* Paleta de cores massa
 
-#01CCFF  #0A1A3F #1F3567 #38FFEB #7159c1 #F08080;*/
+#fd951f*/
 
 :root {
-  --primery-color: #01ccff;
-  --secundary-color: #f7df1e;
+  --primery-color: #fd951f;
+  --secundary-color: #1fd4fd;
   --ternary-color: #f08080;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: #000;
+  color: #fff;
+
+  width: 100%;
+  padding: 32px 0;
+
+  text-align: center;
+}
+
+header div.container {
+  display: grid;
+  grid-template-columns: 220px auto 280px;
+  align-items: center;
+  grid-gap: 24px;
+}
+
+header div.container a {
+  justify-self: start;  
+}
+
+/* logo */
+.logo h1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.logo h2 {
+  color: var(--primery-color);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+/* header search */
+
+.search input {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 16px;
+}
 
