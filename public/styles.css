@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Paleta de cores massa
+
+#01CCFF  #0A1A3F #1F3567 #38FFEB #7159c1 #F08080;*/
+
+:root {
+  --primery-color: #01ccff;
+  --secundary-color: #f7df1e;
+  --ternary-color: #f08080;
+}
+
+
