@@ -36,6 +36,12 @@ header, footer {
   text-align: center;
 }
 
+.container {
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
 header div.container {
   display: grid;
   grid-template-columns: 220px auto 280px;
@@ -70,3 +76,25 @@ header div.container a {
   font-size: 16px;
 }
 
+/* primary menu */
+
+nav.primary ul {
+  display:flex;
+  justify-content: space-between;
+}
+
+nav.primary ul li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  transition: 200ms;
+}
+
+nav.primary ul li a i { 
+  margin-right: 8px;
+}
+
+nav.primary ul li a:hover {
+  color: var(--primery-color);
+}
