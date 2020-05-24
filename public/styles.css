@@ -42,6 +42,33 @@ header, footer {
   margin: 0 auto;
 }
 
+.button {
+  background-color: var(--primery-color);
+  color: #fff;
+
+  display: block;
+  margin: 16px 0;
+  padding: 12px 16px;
+
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  /* para colocar o botao para para baixo se o display for flex */
+  align-self: end;
+
+
+
+}
+
+
 header div.container {
   display: grid;
   grid-template-columns: 220px auto 280px;
@@ -97,4 +124,90 @@ nav.primary ul li a i {
 
 nav.primary ul li a:hover {
   color: var(--primery-color);
+}
+
+/* products form   */
+
+section.form {
+  background-color: #fff;
+  padding: 32px 24px;
+  margin: 32px auto;
+
+  box-shadow: 2px 2px 2px -4px rgba(60, 60, 60, 0.5);
+  border: 1px solid #efefef;
+  border-radius: 4px;
+
+  max-width: 700px;
+  width: 90%;
+}
+
+section.form .header h3 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  color: var(--primery-color);
+
+  margin-bottom: 16px;
+}
+
+form .item {
+  margin-bottom: 16px;
+}
+
+form .item > div:nth-child(1) {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+
+  margin-bottom: 8px;
+}
+
+form .item input[type="text"],
+form .item input[type="number"],
+form .item textarea,
+form .item select {
+    width: 100%;
+
+    padding: 8px 16px;
+
+    box-shadow: 2px 2px 2px -4px rgba(63, 63, 63, 0.9);
+
+    border: 1px solid #efefef;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: #ce6f04;
+  }
+
+form .item select {
+  /* permitir estilização no select */
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* trazer de volta o icone lateral */
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%, 0, 0;
+  background-size: .65 auto, 100%;
+}
+
+form .item textarea {
+  min-height: 150px;
+}
+
+form div.button-create {
+  margin-top: 64px;
 }
