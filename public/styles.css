@@ -2,12 +2,12 @@
 
 /* Paleta de cores massa
 
-#fd951f*/
+#fd951f #1f83fd*/
 
 :root {
   --primery-color: #fd951f;
-  --secundary-color: #1fd4fd;
-  --ternary-color: #f08080;
+  --secundary-color: #1f83fd;
+  --ternary-color: #e94949;
 }
 
 * {
@@ -60,13 +60,24 @@ header, footer {
   cursor: pointer;
 
   transition: all 0.2s;
-
-  /* para colocar o botao para para baixo se o display for flex */
-  align-self: end;
-
-
-
 }
+
+.button.edit {
+  background-color: var(--secundary-color);
+}
+
+.button.delete {
+  background-color: #d3d3d3
+}
+
+.button.edit:hover {
+  background-color: #146cd6;
+}
+
+.button.delete:hover {
+  background-color: var(--ternary-color);
+}
+
 
 
 header div.container {
@@ -211,3 +222,17 @@ form .item textarea {
 form div.button-create {
   margin-top: 64px;
 }
+
+form .item span {
+  padding: 8px 16px;
+  background-color: var(--primery-color);
+  border-radius: 16px;
+  color: #fff;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+

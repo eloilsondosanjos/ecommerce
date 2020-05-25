@@ -12,7 +12,7 @@
         </div>
 </div>
 <div class="item">
-    <div>Name</div>
+    <div>Nome</div>
     <div>
         <input type="text" 
         name="name" 
@@ -23,9 +23,7 @@
 <div class="item">
     <div>Descrição</div>
     <div>
-        <textarea name="description">
-            {{ product.description }}
-        </textarea>
+        <textarea name="description">{{product.description}}</textarea>
     </div>
 </div>
 <div class="item">
@@ -34,7 +32,9 @@
         <input type="text" 
         name="price" 
         placeholder="Preço do Produto" 
-        value="{{ product.price }}">
+        value="{{ product.price }}"
+        onkeydown="Mask.apply(this, 'formatBRL')"
+        >
 
         {# Fazer mascara de preço em reais #}
     </div>
